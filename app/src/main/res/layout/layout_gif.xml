@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_gif_layout">
+
+
+    <ImageView
+        android:id="@+id/imageViewGif"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gif_view_height"
+        android:layout_margin="@dimen/margin_gif_imageview"
+        android:background="@color/colorGifBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGifTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGif"
+        android:layout_marginStart="@dimen/margin_gif_texts"
+        android:layout_marginLeft="@dimen/margin_gif_texts"
+        android:layout_marginTop="@dimen/margin_gif_texts"
+        android:maxLines="2"
+        android:text="Gif title"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/textViewRating"
+        app:layout_constraintRight_toLeftOf="@id/textViewRating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewGif" />
+
+    <TextView
+        android:id="@+id/textViewGifUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_gif_texts"
+        android:layout_marginLeft="@dimen/margin_gif_texts"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        android:text="Gif url"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/textViewRating"
+        app:layout_constraintRight_toLeftOf="@id/textViewRating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewGifTitle" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="@dimen/dimension_rating_text"
+        android:layout_height="@dimen/dimension_rating_text"
+        android:background="@drawable/circle_bg"
+        android:gravity="center"
+        android:text="16+"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imageViewGif"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewGifTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gif_view_height">380dp</dimen>
+    <dimen name="gif_view_margin">16dp</dimen>
+    <dimen name="padding_gif_layout">8dp</dimen>
+    <dimen name="margin_gif_imageview">8dp</dimen>
+    <dimen name="margin_gif_texts">8dp</dimen>
+    <dimen name="dimension_rating_text">90dp</dimen>
+</resources>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DemoApp</string>
+    <string name="message_error_fetching_random">Error occurred while fetching random GIF</string>
+    <string name="message_search">Search</string>
+    <string name="message_random_gif">Random selected GIF</string>
+    <string name="message_retry">Retry</string>
+    <string name="message_search_results">Search results:</string>
+    <string name="message_no_title">No title for this GIF</string>
+    <string name="message_error_fetching_search">Error occurred while searching</string>
 </resources>
