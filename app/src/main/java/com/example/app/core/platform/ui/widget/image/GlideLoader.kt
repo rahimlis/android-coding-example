@@ -17,6 +17,7 @@ constructor(private val requestManager: RequestManager) :
     override fun loadImageIntoView(path: String, view: ImageView?) {
         if (view == null) return
         requestManager.load(path)
+            .centerCrop()
             .transition(DrawableTransitionOptions.withCrossFade())
             .error(errorImage())
             .into(view)
@@ -25,6 +26,7 @@ constructor(private val requestManager: RequestManager) :
     override fun loadImageIntoView(resourceId: Int, view: ImageView?) {
         if (view == null) return
         requestManager.load(resourceId)
+            .centerCrop()
             .transition(DrawableTransitionOptions.withCrossFade())
             .error(errorImage())
             .into(view)

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DemoApp</string>
+    <string name="message_error_fail_fetching_images_from_remote">"Error occurred while fetching images from server. Please try again later. "</string>
+    <string name="message_retry">Retry</string>
+    <string name="message_search">Search</string>
+    <string name="message_oops">Oops!</string>
+    <string name="message_no_results">No results for your query. Please try to change your query.</string>
+    <string name="message_error_generic">Error occurred.</string>
 </resources>

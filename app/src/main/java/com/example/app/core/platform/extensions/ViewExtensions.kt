@@ -11,7 +11,3 @@ fun View.show() {
 fun View.hide() {
     visibility = View.GONE
 }
-
-fun View.setVisible(isVisible: Boolean) {
-    visibility = if (isVisible) View.VISIBLE else View.GONE
-}
