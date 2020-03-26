@@ -23,7 +23,8 @@ class ApplicationModule {
 
     @Provides
     @Singleton
-    fun provideGlideRequestOptions() = RequestOptions.errorOf(R.drawable.error_drawable)
+    fun provideGlideRequestOptions(): RequestOptions =
+        RequestOptions.errorOf(R.drawable.error_drawable)
 
     @Provides
     @Singleton
